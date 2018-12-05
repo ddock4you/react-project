@@ -1,0 +1,93 @@
+&-userInfo {
+    padding-top: 8rem;
+
+    &-img {
+        height: 7rem;
+        position: relative;
+
+        hr {
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        
+            &:first-child {
+                left: 0;
+            }
+
+            &:last-child {
+                right: 0;
+            }
+        }
+
+        .userImage {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-bottom {
+        padding-top: 3rem;
+        text-align: center;
+        line-height: 2.4rem;
+
+        .user-name {
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .user-hobby {
+            font-size: 1.6rem;
+        }
+
+        .user-intro {
+            font-size: 1.4rem;
+            color: #777;
+        }
+
+        button {
+            width: 10rem;
+            height: 4rem;
+            margin-top: 1rem;
+            background-color: rgb(23, 206, 223);
+            border: none;
+            border-radius: 2rem;
+            outline: none;
+            font-size: 1.4rem;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+&-count {
+    overflow: hidden;
+    padding-top: 8rem;
+    font-size: 1.6rem;
+    color: #777;
+
+    &-like {
+        float: left;
+        padding-right: 2rem;
+
+        &-img {
+            width: 4rem;
+            position: relative;
+            overflow: hidden;
+            padding-right: 2rem;
+
+            .userImage {
+                width: 2rem;
+                height: 2rem;
+
+            }
+        }
+    }
+
+    &-share {
+        float: right;
+        text-align: right;
+    }
+}

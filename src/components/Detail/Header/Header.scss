@@ -1,0 +1,48 @@
+&-header {
+    position: relative;
+
+    &-info {
+        margin-left: 7rem;
+
+        //detail-header-info name
+        & div:first-child {
+            padding-top: .8rem;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        .write-date {
+            position: relative;
+            color: #ccc;
+            font-size: 1.4rem;
+        }
+
+        i {
+            position: absolute;
+            top: -5rem;
+            right: 0;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+    }            
+}
+
+.userImage {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 3rem;
+    line-height: 6rem;
+    text-align: center;
+    color: lightblue;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

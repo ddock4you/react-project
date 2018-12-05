@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.detail-wrap {
+    position: relative;
+    margin-top: 6rem;
+    padding-top: 10rem;
+    background-color: #f8f8f8;
+    @include afterClear();
+
+    .detail {
+        width: 70rem;
+        padding: 5rem 10rem;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        background-color: #fff;
+
+        //layout
+        @import 'Close/Close';
+        @import 'Sidebar/Sidebar';
+        @import 'Header/Header';
+        @import 'Content/Content';
+        @import 'Info/Info';
+        @import 'Comments/Comments';
+    }
+}
