@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Detail.scss';
 import Sidebar from './Sidebar';
 import DetailHeader from './Header';
 import DetailContent from './Content';
 import Info from './Info';
-import Comments from './Comments';
+import Comments from './CommentList';
 import Close from './Close';
 
 
-const Detail = () => {
+class Detail extends Component {
 
-    return (
-        <div className="detail-wrap">
-            <Close />
-            <Sidebar />
-            <div className="detail">
-                <DetailHeader />
-                <DetailContent />
-                <Info />
-                <Comments />
+    
+
+    render() {
+        return (
+            <div className="detail-wrap">
+                <Close />
+                <Sidebar />
+                <div className="detail">
+                    <DetailHeader />
+                    <DetailContent />
+                    <Info />
+                    <Comments />
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
-
 
 export default Detail;  

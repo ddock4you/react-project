@@ -39,7 +39,10 @@
         ul {
             li {
                 position: relative;
-                margin-top: 2rem;
+                
+                &:first-child {
+                    margin-top: 2rem;
+                }
 
                 .comment-profile {
                     position: absolute;
@@ -57,7 +60,7 @@
                 .comment {
                     margin-left: 6rem;
                     padding-bottom: 2rem;
-                    border-bottom: 1px solid #ccc;
+                    
                     
                     &-header {
                         font-size: 1.6rem;
@@ -75,6 +78,7 @@
                     &-footer {
                         @include afterClear();
                         padding-bottom: 2rem;
+                        border-bottom: 1px solid #ccc;
 
                         &-left {
                             float: left;
@@ -87,6 +91,7 @@
 
                             .comment-reply-btn {
                                 color: #333;
+                                cursor: pointer;
                                 
                             }
                         }
@@ -98,6 +103,7 @@
                             > div {
                                 display: inline-block;
                                 padding-right: 2rem;
+                                cursor: pointer;
 
                                 > i {
                                     padding-right: .5rem; 
@@ -121,10 +127,20 @@
                     border: none;
                 }
             }
+
+            //대댓글 영역
+            ul li {
+                border-bottom: 1px solid #ccc;
+
+                .comment-footer {
+                    border-bottom:  none;
+                }
+            }
         }
 
         //
         .comment-reply {
+            padding-top: 2rem;
             position: relative;
             cursor: pointer;
 
