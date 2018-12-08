@@ -30,9 +30,9 @@ class CommentList extends Component {
     const { comments, cmtInput } = this.state;
     if(cmtInput === '' || cmtInput === ' ') {
       alert('댓글 내용을 입력해주세요.');
-
       return;
     }
+
     const addCmt = {
       cmtText: cmtInput,
     };
@@ -44,6 +44,8 @@ class CommentList extends Component {
       cmtInput:''
     });
     
+    localStorage.setItem('comments', JSON.stringify(comments));
+    console.log(comments);
   }
 
   //좋아요 버튼 클릭 시 토글 효과(좋아요 아이콘 on/off 및 좋아요 수치+1, -1)
