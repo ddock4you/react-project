@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
-
+@import 'mixins';
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +8,10 @@
 
 html {
     font-size:62.5%;
+
+    @include mq('small-screen-1') {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -16,4 +20,13 @@ body {
 
 ul, li {
     list-style: none;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+}
+
+.wrapper { 
+    position: relative;
 }

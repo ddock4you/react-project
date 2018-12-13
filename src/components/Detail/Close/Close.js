@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Close extends Component { 
     
@@ -8,13 +9,15 @@ class Close extends Component {
     }
 
     render(){
-        const { closeDetail } = this;
+        //const { closeDetail } = this;
 
         return (
-            <div className="detail-close" onClick={closeDetail}>
-                <span></span>
-                <span></span>
-            </div>
+            <Link to="/"> {/* history 기능을 해야할듯 */}
+                <div className="detail-close" >
+                    <span></span>
+                    <span></span>
+                </div>
+            </Link>
         );
     }
 };

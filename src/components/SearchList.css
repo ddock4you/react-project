@@ -1,0 +1,12 @@
+.searchList {width:780px; margin:0 auto; font-size:0}
+
+.searchList .searchCard {overflow:hidden; display:inline-block; width:380px; height:376px; margin:20px 5px; font-size:15px; border:1px solid #dce2e6; border-radius:8px; background:#fff}
+.searchList .searchCard .cardThumbnail img {width:100%; max-height:235px;}
+.searchList .searchCard .cardInfo {padding:20px 25px}
+.searchList .searchCard .cardInfo .cardInfoTitle {margin-bottom:5px; font-weight:bold; font-size:16px}
+.searchList .searchCard .cardInfo .cardInfoContents {height:50px; font-size:14px; line-height:1.5em}
+.searchList .searchCard .cardInfo .cardInfoBottom .cardInfoNicname {float:left; font-size:14px}
+.searchList .searchCard .cardInfo .cardInfoBottom .cardInfoIcon {float:right} 
+.searchList .searchCard .cardInfo .cardInfoBottom .cardInfoIcon ul {margin:0; padding:0}
+.searchList .searchCard .cardInfo .cardInfoBottom .cardInfoIcon li {display:inline-block; margin:0; padding:0}
+

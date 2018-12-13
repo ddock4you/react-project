@@ -6,11 +6,9 @@ import DetailContent from './Content';
 import Info from './Info';
 import Comments from './CommentList';
 import Close from './Close';
-
+import Footer from './Footer';
 
 class Detail extends Component {
-
-    
 
     render() {
         return (
@@ -23,6 +21,7 @@ class Detail extends Component {
                     <Info />
                     <Comments />
                 </div>
+                <Footer />
             </div>
         );
     }

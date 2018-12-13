@@ -1,0 +1,97 @@
+div .MainCompoTitle{
+  height: 70px;
+  border:1px solid #dce2e6;
+  text-align: center;
+  line-height: 70px;
+}
+
+.wrap{
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1034px;
+  height: 100vh;
+  padding-top:40px;
+}
+
+.lcon{
+  padding: 37px 24px 27px 24px;
+  border: 1px solid #dce2e6;
+  border-radius: 8px;
+  margin-bottom: 27px;
+}
+
+.rcon{
+  border: 1px solid #dce2e6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card{
+  /* border: 1px solid black; */
+  float: left;
+  width: 600px;
+  margin-right:50px;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.right_wrap{
+  /* border: 1px solid black; */
+  float: left;
+  width: 330px;
+}
+
+.right_wrap .top{
+  /* border: 1px solid black; */
+  /* height: 400px; */
+}
+
+.in_wrap{
+  padding: 28px 34px 10px 34px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.right_wrap{
+  font-size: 12px;
+}
+
+.in_wrap div a{
+  display: inline-block;
+  float: right;
+  color: #869196;
+}
+
+.in_wrap ul li{
+  padding:20px 0 20px 0;
+  border-bottom: 1px solid #dce2e6;
+}
+
+.in_wrap ul li:last-child{
+  border-bottom: 0px;
+}
+
+.in_wrap ul li p{
+  line-height: 1.77;
+}
+
+p:nth-child(even){
+  color: #869196;
+}
+
+.right_wrap .bottom{
+  /* border: 1px solid black; */
+  height: 175px;
+}
+.info ul{
+  text-align: center;
+}
+.info ul li{
+  display: inline-block;
+}
+.info ul li a{
+  color: #869196;
+}

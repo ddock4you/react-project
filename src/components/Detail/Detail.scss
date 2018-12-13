@@ -2,7 +2,6 @@
 
 .detail-wrap {
     position: relative;
-    margin-top: 6rem;
     padding-top: 10rem;
     background-color: #f8f8f8;
     @include afterClear();
@@ -15,12 +14,20 @@
         border-radius: 1rem;
         background-color: #fff;
 
-        //layout
+        @include mq('small-screen-1') {
+            width: 90%;
+            padding: 3rem 5%;
+        }
+        
+        //Detail-layout
         @import 'Close/Close';
         @import 'Sidebar/Sidebar';
         @import 'Header/Header';
         @import 'Content/Content';
         @import 'Info/Info';
         @import 'CommentList/CommentList';
+        
     }
+    //Detail-outer-layout
+    @import 'Footer/Footer';
 }

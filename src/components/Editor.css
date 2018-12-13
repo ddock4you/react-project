@@ -1,0 +1,21 @@
+.editorContainer {position:relative; width:780px; margin:0 auto; padding:100px 90px; border:1px solid #dce2e6; border-radius:8px; background:#fff}
+.editorContainer .editorSave {width:80px; height:40px; font-size:14px; color:#fff; line-height:40px; text-align:center; border:0; border-radius:100px; background:#fb2942}
+
+/* EditorUser */
+.editorUserInfo .editorUserIcon,
+.editorUserInfo .editorUserName {display:inline-block; vertical-align:middle} 
+.editorUserInfo .editorUserIcon {width:62px; height:62px; margin-right:15px; border:1px solid #ccc; border-radius:31px; background:url("https://media.vingle.net/images/us_l/lws0wuwvbm.jpg"); background-size:100%}
+.editorUserInfo .editorUserName {font-size:18px}
+
+/* EditorTitle */
+.editorTitle {margin:40px 0 15px}
+.editorTitle .editorTitleInput {overflow-y:hidden; width:100%; height:42px; font-weight:bold; font-size:28px; line-height:32px; border:0; resize:none}
+
+/* EditorContents */
+.editorContents {position:relative; height:300px}
+.editorContents .editorContentsTextarea {width:100%; height:100%; resize:none; font-size:16px; border:0}
+.editorContents .editorLeft {position:absolute; top:0; left:-200px}
+.editorContents .editorLeft .editorInputIcon {position:relative}
+.editorContents .editorLeft .editorInputIcon label {display:inline-block; width:50px; height:50px; padding:.5em; font-size:12px; text-align:center; color:#fff; border-radius:50px; cursor:pointer; background:#999}
+.editorContents .editorLeft .editorInputIcon input {position:absolute; overflow:hidden; width:1px; height:1px; padding:0; margin:-1px; border:0}
+

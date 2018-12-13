@@ -5,3 +5,26 @@
         clear: both;
     }
 }
+
+
+@mixin mq($screen-width){
+    @if $screen-width == 'pc-small-screen'{
+        @media screen and (min-width: 901px) and (max-width:1300px){
+            @content;
+        }
+    }
+
+    @if $screen-width == 'small-screen-1'{
+        @media screen and (min-width: 300px) and (max-width:900px){
+            @content;
+        }
+    }
+
+    @else if $screen-width == 'small-screen-2'{
+        @media screen and (min-width: 400px) and (max-width:640px){
+            @content;
+        }
+    }
+
+
+}

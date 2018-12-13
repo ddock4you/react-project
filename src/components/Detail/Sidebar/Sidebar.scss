@@ -17,4 +17,11 @@
         text-align: center;
         cursor: pointer;
     }
+    @include mq('pc-small-screen') {
+        display: none;
+    }
+    
+    @include mq('small-screen-1') {
+        display: none;
+    }
 }
